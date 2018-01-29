@@ -1,0 +1,115 @@
+div.jogo {
+    height: 750px;
+    width: 1300px;
+    margin: auto;
+    border: 5px solid #000000;
+	background-image: url("images/fundo.png");
+	background-color: powderblue;
+}
+div.janela {
+    height: 800px;
+    width: 1300px;
+    margin: auto;
+    border: 5px solid #000000;
+	background-color: powderblue;
+}
+div.end {
+    height: 400px;
+    width: 800px;
+	z-index:10;
+    position:absolute;
+	top:22%;
+	left:22%;
+    border: 5px solid #000000;
+	background-color: powderblue;
+}
+#overlay {
+  pointer-events: none;
+}
+#img {
+    float: right;
+}
+.parent{
+    width:200px;
+    height:200px;
+    position:absolute;
+    z-index:0;
+}
+
+.inner{
+    position:absolute;
+    z-index:1;
+    bottom:90%;
+    left:95%;
+}
+.innercliente{
+    position:absolute;
+    z-index:2;
+    bottom:0%;
+    right:0;
+}
+.inneresq{
+    position:absolute;
+    z-index:1;
+    bottom:90%;
+    right:50%;
+}
+.innerclienteesq{
+    position:absolute;
+    z-index:2;
+    bottom:0%;
+    left:40%;
+}
+.innerbarman{
+    position:absolute;
+    z-index:0;
+    bottom:-50px;
+    left:25%;
+}
+.innerpedido{
+    position:absolute;
+    z-index:3;
+    bottom:100%;
+    left:100%;
+}
+.innerpedidodois{
+    position:absolute;
+    z-index:3;
+    bottom:100%;
+    right:100%;
+}
+.innertempo{
+    position:absolute;
+    z-index:4;
+    bottom:100%;
+    right:50%;
+}
+.innertempoum{
+    position:absolute;
+    z-index:4;
+    bottom:1%;
+    left:100%;
+}
+.innertempodois{
+    position:absolute;
+    z-index:4;
+    bottom:1%;
+    right:100%;
+}
+div.bebidas {
+	position:relative;
+    height: 100px;
+    width: 100px;
+	top:10px;
+}
+div.texto {
+	position:relative;
+    height: 10px;
+    width: 100px;
+	top:10px;
+}div.info {
+	position:relative;
+    height: 10px;
+    width: 100px;
+	padding-top:40px;
+}

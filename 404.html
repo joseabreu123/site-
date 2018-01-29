@@ -1,0 +1,191 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CocktailSociety</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <!--
+   <img class="img-responsive" src="banner.png" alt="Banner" style="width:100%"> -->
+</head>
+<body>
+
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-glass"></span> CocktailSociety</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="classics.html">Classics</a></li>
+      <li><a href="#">Comunity</a></li>
+	  <li><a href="#">Submit your cocktail</a></li>
+	  <li><a href="about.html">About Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"data-toggle="modal" data-target="#registermodal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#" data-toggle="modal" data-target="#loginmodal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav> 
+
+
+
+
+
+
+
+
+  <!-- Modal de Login -->
+  <div class="modal fade" id="loginmodal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title"><b>Login</b></h3>
+        </div>
+        <div class="modal-body">
+		 <form action="/TPSIB17/p5/userlogin.php" method = "post">
+			<div class="form-group">
+			<label for="email">Email:</label>
+			<input type="email" class="form-control" id="email" required>
+			</div>
+			<div class="form-group">
+			<label for="pwd">Password:</label>
+			<input type="password" class="form-control" id="password" required>
+			</div>
+	<div class="checkbox">
+		<label><input type="checkbox"> Remember me</label>
+	</div>
+  <button type="submit" name="submit" value="Send" class="btn btn-success">Login</button>
+</form> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+    <!-- Modal de Register -->
+  <div class="modal fade" id="registermodal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title"><b>Register</b></h3>
+        </div>
+        <div class="modal-body">
+		 <form action="sign_up2.php" method="post">
+			<div class="form-group">
+			<label for="usr">Name:</label>
+			<input type="text" class="form-control" id="name" name="name">
+			</div>
+			<div class="form-group">
+			<label for="usr">Surname:</label>
+			<input type="text" class="form-control" id="surname" name="surname">
+			</div>
+			<div class="form-group">
+			<label for="email">Email:</label>
+			<input type="email" class="form-control" id="email" name="email">
+			</div>
+			<div class="form-group">
+			<label for="pwd">Password:</label>
+			<input type="password" class="form-control" id="password" name="password">
+			</div>
+  <button type="submit" class="btn btn-success">Register</button>
+</form> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Carousel -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Troca de slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="carousel.png" style="width:100%" alt="um">
+	        <div class="carousel-caption">
+        <h3>Botão</h3>
+        <p>Grande!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="carousel.png" style="width:100%" alt="dois">
+    </div>
+
+    <div class="item">
+      <img src="carousel.png" style="width:100%" alt="tres">
+    </div>
+  </div>
+
+  <!-- Setas -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+<div class="container"> 
+<form> 
+<div class="input-group"> 
+<input type="text" class="form-control" placeholder="Search ..." name="search"> 
+<div class="input-group-btn"> 
+<button class="btn btn-default" type="submit"> <i class="glyphicon glyphicon-search"></i></button> 
+</div> 
+</div> 
+</form> 
+</div>
+
+<br>
+<br>
+<div class="container">
+<center><h1>O nosso projeto</h1>
+<p class="text-justify">Este projeto consiste na criação de um website tendo como tema base cocktails,
+ neste website teremos uma área para que os utilizadores possam consultar os 
+ cocktails clássicos submetidos pela administração do site, também terá uma área 
+ onde poderam encontrar cocktails da comunidade que serão submetidos pelos utilizadores, 
+ também terá um criador de cocktails que os utilizadores poderão utilizar para criar os seus 
+ cocktails e partilhar com a comunidade, e por ultimo terá um mini jogo com o objectivo gerir 
+ um bar onde o utilizador terá de responder a pedidos de clientes de maneira a ganhar dinheiro 
+ e manter o bar aberto, caso o utilizador não responda aos pedidos de maneira correta o bar fecha e acaba o jogo.</p></center>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; CocktailSociety 2017</p>
+      </div>
+    </footer>
+</html> 
